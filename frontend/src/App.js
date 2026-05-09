@@ -1,52 +1,44 @@
-import { useEffect } from "react";
+import React, { useState } from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import SocialProofSection from "@/components/SocialProofSection";
+import ProblemSection from "@/components/ProblemSection";
+import SolutionSection from "@/components/SolutionSection";
+import WorkflowSection from "@/components/WorkflowSection";
+import VoiceWorkflowSection from "@/components/VoiceWorkflowSection";
+import DashboardSection from "@/components/DashboardSection";
+import PoliciesSection from "@/components/PoliciesSection";
+import PricingSection from "@/components/PricingSection";
+import WaitlistModal from "@/components/WaitlistModal";
+import FAQSection from "@/components/FAQSection";
+import CTASection from "@/components/CTASection";
+import FooterSection from "@/components/FooterSection";
 
 function App() {
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
+
+  const openWaitlist = () => setWaitlistOpen(true);
+
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="min-h-screen bg-[#050505] noise-overlay relative">
+      <Navbar onOpenWaitlist={openWaitlist} />
+      <main>
+        <HeroSection onOpenWaitlist={openWaitlist} />
+        <SocialProofSection />
+        <ProblemSection />
+        <SolutionSection />
+        <WorkflowSection />
+        <VoiceWorkflowSection />
+        <DashboardSection />
+        <PoliciesSection />
+        <PricingSection onOpenWaitlist={openWaitlist} />
+        <FAQSection />
+        <CTASection onOpenWaitlist={openWaitlist} />
+        <FooterSection />
+      </main>
+      <WaitlistModal open={waitlistOpen} onOpenChange={setWaitlistOpen} />
     </div>
   );
 }
