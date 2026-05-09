@@ -1,0 +1,92 @@
+{
+  "theme": "Dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) + Archetype 5 (Jewel & Luxury)",
+  "concept": "Premium, AI-native WhatsApp Business Assistant. Deep obsidian backgrounds with glowing Emerald (WhatsApp) accents and structural greys.",
+  "typography": {
+    "fonts": {
+      "heading": "Outfit",
+      "body": "Manrope",
+      "instructions": "Import these from Google Fonts in index.css or index.html."
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl font-medium",
+      "body": "text-base leading-relaxed text-zinc-400",
+      "label": "text-xs tracking-[0.2em] uppercase font-semibold text-zinc-500"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "bg-[#050505]",
+      "secondary": "bg-[#0A0A0A]",
+      "surface": "bg-zinc-900",
+      "surface_hover": "hover:bg-zinc-800"
+    },
+    "text": {
+      "primary": "text-zinc-50",
+      "secondary": "text-zinc-400",
+      "inverse": "text-black",
+      "accent": "text-emerald-500"
+    },
+    "accent": {
+      "primary": "bg-[#10B981]", 
+      "primary_hover": "hover:bg-[#059669]",
+      "secondary": "bg-[#FACC15]",
+      "glow": "shadow-[0_0_20px_rgba(16,185,129,0.25)]"
+    },
+    "border": "border-zinc-800"
+  },
+  "spacing_and_layout": {
+    "padding": "Generous spacing. Main sections use py-24 or py-32.",
+    "grid": "Bento Grid (Mode A: Tetris) for Features. Base: grid-cols-1 md:grid-cols-3 lg:grid-cols-4, tight gaps (gap-4 or gap-6). Ensure span asymmetry.",
+    "radius": "rounded-2xl for major cards, rounded-xl for inner UI elements."
+  },
+  "components": {
+    "buttons": "Shadcn Button heavily customized. Primary CTA: Emerald green with subtle glow and dark text. Must include explicit hover states. Secondary CTA: Outline with zinc-800 border.",
+    "cards": "Dark flat cards with 1px border-zinc-800. Background zinc-900/50. Hover: slight lift (-translate-y-1) and border transition to emerald-500/30.",
+    "navigation": "Crystal Glass sticky header: backdrop-blur-xl bg-[#050505]/70 border-b border-zinc-800/50. Include logo, 4 links, and Book Demo CTA.",
+    "modal": "Shadcn Dialog for Waitlist. Embedded form UI with premium styling. Avoid generic inputs; use Shadcn Input heavily restyled for dark mode.",
+    "accordion": "Shadcn Accordion for FAQ. Border-b on items, clear hover states for triggers."
+  },
+  "animations": {
+    "libraries": ["framer-motion", "lucide-react"],
+    "interactions": [
+      "Hero WhatsApp Chat: Use framer-motion staggered fade-ins and Y-transforms to simulate a live AI WhatsApp conversation.",
+      "Hover Micro-interactions: Cards and buttons should smoothly transition transform and border color.",
+      "Scroll Animations: Fade-in sections using framer-motion `whileInView={{ opacity: 1, y: 0 }}`."
+    ]
+  },
+  "media": {
+    "images": [
+      {
+        "category": "Hero Background",
+        "url": "https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/bc34143c21f8c299ba8b1b6afa470beec87d50bed7811b75236354cbd9ce33a8.png",
+        "description": "Dark high-end abstract background with emerald green particles and minimal grids.",
+        "usage": "Use as an absolute background image in the Hero section, masked or with opacity-30 so it doesn't overpower the text."
+      },
+      {
+        "category": "Dashboard Preview",
+        "url": "https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/3e7136ea1ab41a7eb59a8b36f7ba04a6e536ffa4fc62305312921a10a79f4496.png",
+        "description": "High-end UI UX dark mode dashboard mockup with glowing charts.",
+        "usage": "Place in the Dashboard section. Wrap in a container with a subtle zinc-800 border and inner shadow."
+      },
+      {
+        "category": "Voice Workflow Context",
+        "url": "https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/5c3690300e0d3bd801d41b19c417562a43d3cd662c1a8e7df192b48048e28038.png",
+        "description": "Cinematic portrait of a modern Indian business owner looking at smartphone.",
+        "usage": "Use in the 'Problem' or 'Voice Workflow' section to ground the AI technology with a human element."
+      }
+    ],
+    "icons": "Use lucide-react for all iconography (e.g., CheckCircle, MessageSquare, Mic, Zap). For social proof logos, use text or lucide icons to maintain the dark premium feel, avoiding colored raster images."
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the dark mode color palette. Ensure contrast ratios are met (no pure black on pure black).",
+    "Hero section MUST feature a visual animated WhatsApp conversation mockup (build with HTML/Tailwind/Framer Motion) showing Elzoha managing a business task.",
+    "Build the 8 Solution Feature Cards using the Bento Grid layout style. Make sure spans are asymmetrical.",
+    "Implement 3 Pricing tiers: Starter (₹999), Growth (₹2999) with a 'Most Popular' highlight, and Business (Custom).",
+    "The 'Join Waitlist' button MUST open a Shadcn Dialog containing a Kit form embed/mockup. Demo booking can link to an external URL.",
+    "Embed `data-testid` attributes on all interactive elements (buttons, links, dialog triggers, form inputs).",
+    "Do NOT use text-8xl or above. Respect fluid text scales capped at text-6xl for hero headings."
+  ]
+}
