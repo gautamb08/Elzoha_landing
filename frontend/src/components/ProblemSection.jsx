@@ -27,7 +27,7 @@ export default function ProblemSection() {
             <div className="absolute -inset-4 bg-emerald-500/5 rounded-3xl blur-2xl" />
             <div className="relative overflow-hidden rounded-2xl border border-zinc-800">
               <img
-                src="https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/5c3690300e0d3bd801d41b19c417562a43d3cd662c1a8e7df192b48048e28038.png"
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2532&auto=format&fit=crop"
                 alt="Indian business owner"
                 className="w-full h-auto object-cover"
               />

@@ -104,7 +104,7 @@ export default function HeroSection({ onOpenWaitlist }) {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/bc34143c21f8c299ba8b1b6afa470beec87d50bed7811b75236354cbd9ce33a8.png"
+          src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2564&auto=format&fit=crop"
           alt=""
           className="absolute inset-0 w-full h-full object-cover opacity-25"
         />

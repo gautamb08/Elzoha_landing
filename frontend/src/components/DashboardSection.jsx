@@ -46,7 +46,7 @@ export default function DashboardSection() {
           <div className="absolute -inset-8 bg-emerald-500/5 rounded-3xl blur-3xl" />
           <div className="relative rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
             <img
-              src="https://static.prod-images.emergentagent.com/jobs/212fbafe-3367-4c55-9725-e52a2d15aa59/images/3e7136ea1ab41a7eb59a8b36f7ba04a6e536ffa4fc62305312921a10a79f4496.png"
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
               alt="Elzoha Dashboard Preview"
               className="w-full h-auto"
             />
