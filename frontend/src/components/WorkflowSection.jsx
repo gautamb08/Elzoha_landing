@@ -42,7 +42,7 @@ const steps = [
 
 export default function WorkflowSection() {
   return (
-    <section id="workflow" data-testid="workflow-section" className="relative py-24 sm:py-32">
+    <section id="workflow" data-testid="workflow-section" className="relative py-16 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.span
@@ -66,7 +66,7 @@ export default function WorkflowSection() {
         </div>
 
         {/* Desktop: horizontal flow */}
-        <div className="hidden md:flex items-start justify-between gap-4 relative">
+        <div className="hidden lg:flex items-start justify-between gap-4 relative">
           {/* Connecting line */}
           <div className="absolute top-10 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-emerald-500/30 via-emerald-500/10 to-emerald-500/30" />
 
@@ -95,7 +95,7 @@ export default function WorkflowSection() {
         </div>
 
         {/* Mobile: vertical flow */}
-        <div className="md:hidden space-y-6">
+        <div className="lg:hidden space-y-6">
           {steps.map((step, i) => (
             <motion.div
               key={step.label}

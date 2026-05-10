@@ -16,37 +16,37 @@ const features = [
     icon: FileText,
     title: "AI Invoice Generation",
     desc: "Create professional GST-compliant invoices in seconds through simple messages.",
-    span: "md:col-span-2",
+    span: "lg:col-span-2",
   },
   {
     icon: Mic,
     title: "Voice-Note Workflows",
     desc: "Send Hindi or Hinglish voice notes — AI handles the rest.",
-    span: "md:col-span-1",
+    span: "lg:col-span-1",
   },
   {
     icon: Brain,
     title: "Client Memory System",
     desc: "AI remembers your clients, rates, and preferences automatically.",
-    span: "md:col-span-1",
+    span: "lg:col-span-1",
   },
   {
     icon: Receipt,
     title: "Automatic GST Handling",
     desc: "Never worry about tax calculations. GST applied intelligently.",
-    span: "md:col-span-1",
+    span: "lg:col-span-1",
   },
   {
     icon: FileCheck,
     title: "Professional Quotations",
     desc: "Generate branded quotations that win clients over.",
-    span: "md:col-span-1",
+    span: "lg:col-span-1",
   },
   {
     icon: ScrollText,
     title: "Business Policies",
     desc: "Turn casual text into formal business policies instantly.",
-    span: "md:col-span-1",
+    span: "lg:col-span-1",
   },
   {
     icon: Bell,
@@ -64,7 +64,7 @@ const features = [
 
 export default function SolutionSection() {
   return (
-    <section id="features" data-testid="solution-section" className="relative py-24 sm:py-32">
+    <section id="features" data-testid="solution-section" className="relative py-16 sm:py-32">
       <div className="gradient-radial-center absolute inset-0 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
@@ -88,7 +88,7 @@ export default function SolutionSection() {
           </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}

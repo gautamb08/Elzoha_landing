@@ -22,7 +22,7 @@ function App() {
   const openWaitlist = () => setWaitlistOpen(true);
 
   return (
-    <div className="min-h-screen bg-[#050505] noise-overlay relative">
+    <div className="min-h-screen bg-[#050505] noise-overlay relative overflow-x-hidden">
       <Navbar onOpenWaitlist={openWaitlist} />
       <main>
         <HeroSection onOpenWaitlist={openWaitlist} />

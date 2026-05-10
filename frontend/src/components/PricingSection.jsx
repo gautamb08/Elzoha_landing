@@ -53,7 +53,7 @@ const plans = [
 
 export default function PricingSection({ onOpenWaitlist }) {
   return (
-    <section id="pricing" data-testid="pricing-section" className="relative py-24 sm:py-32">
+    <section id="pricing" data-testid="pricing-section" className="relative py-16 sm:py-32">
       <div className="gradient-radial-center absolute inset-0 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
@@ -85,7 +85,7 @@ export default function PricingSection({ onOpenWaitlist }) {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 max-w-5xl mx-auto">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -117,7 +117,7 @@ export default function PricingSection({ onOpenWaitlist }) {
               </div>
 
               <div className="mb-6">
-                <span className="text-4xl font-bold text-zinc-50 font-['Outfit']">
+                <span className="text-3xl sm:text-4xl font-bold text-zinc-50 font-['Outfit']">
                   {plan.price === "Custom" ? "" : "₹"}
                   {plan.price}
                 </span>

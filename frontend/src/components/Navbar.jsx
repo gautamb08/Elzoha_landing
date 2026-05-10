@@ -45,7 +45,7 @@ export default function Navbar({ onOpenWaitlist }) {
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -59,7 +59,7 @@ export default function Navbar({ onOpenWaitlist }) {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3">
             <a
               href="https://calendly.com"
               target="_blank"
@@ -85,7 +85,7 @@ export default function Navbar({ onOpenWaitlist }) {
           {/* Mobile Menu Toggle */}
           <button
             data-testid="mobile-menu-toggle"
-            className="md:hidden text-zinc-400 hover:text-zinc-50 transition-colors"
+            className="lg:hidden text-zinc-400 hover:text-zinc-50 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -98,11 +98,12 @@ export default function Navbar({ onOpenWaitlist }) {
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#050505]/95 backdrop-blur-xl border-b border-zinc-800/50"
+            className="lg:hidden absolute top-16 sm:top-20 left-0 right-0 bg-[#050505] border-b border-zinc-800/50 overflow-y-auto"
           >
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-8 space-y-6 min-h-[calc(100vh-80px)] flex flex-col">
+              <div className="space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
@@ -113,14 +114,15 @@ export default function Navbar({ onOpenWaitlist }) {
                   {link.label}
                 </a>
               ))}
-              <div className="pt-4 flex flex-col gap-3">
+              </div>
+              <div className="pt-6 mt-auto flex flex-col gap-3 pb-8">
                 <Button
                   data-testid="mobile-join-waitlist-btn"
                   onClick={() => {
                     setMobileOpen(false);
                     onOpenWaitlist();
                   }}
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full h-11"
+                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full h-12 text-base glow-emerald"
                 >
                   Join Waitlist
                 </Button>

@@ -22,7 +22,7 @@ const examples = [
 
 export default function PoliciesSection() {
   return (
-    <section data-testid="policies-section" className="relative py-24 sm:py-32">
+    <section data-testid="policies-section" className="relative py-16 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.span

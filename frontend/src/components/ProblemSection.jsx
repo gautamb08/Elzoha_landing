@@ -13,7 +13,7 @@ const painPoints = [
 
 export default function ProblemSection() {
   return (
-    <section data-testid="problem-section" className="relative py-24 sm:py-32">
+    <section data-testid="problem-section" className="relative py-16 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Image */}

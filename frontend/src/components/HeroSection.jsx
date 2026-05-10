@@ -99,7 +99,7 @@ export default function HeroSection({ onOpenWaitlist }) {
   return (
     <section
       data-testid="hero-section"
-      className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-24 sm:pt-32 pb-16 overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0">
@@ -135,14 +135,14 @@ export default function HeroSection({ onOpenWaitlist }) {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-50 leading-[1.1] font-['Outfit']"
             >
               Run Your Business{" "}
-              <span className="gradient-text">Through WhatsApp</span>
+              <span className="gradient-text block mt-2 sm:mt-0 sm:inline">Through WhatsApp</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-6 text-base sm:text-lg text-zinc-400 leading-relaxed max-w-lg mx-auto lg:mx-0"
+              className="mt-6 text-sm sm:text-base lg:text-lg text-zinc-400 leading-relaxed max-w-lg mx-auto lg:mx-0"
             >
               Generate invoices, quotations, reminders, and business workflows
               using simple WhatsApp messages and voice notes.
@@ -152,7 +152,7 @@ export default function HeroSection({ onOpenWaitlist }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full max-w-md mx-auto lg:mx-0"
             >
               <Button
                 data-testid="hero-join-waitlist-btn"
@@ -183,7 +183,7 @@ export default function HeroSection({ onOpenWaitlist }) {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative mx-auto w-full max-w-sm lg:max-w-md"
+            className="relative mx-auto w-full max-w-md"
           >
             <div className="absolute -inset-4 bg-emerald-500/10 rounded-3xl blur-3xl" />
             <div className="relative glass-card rounded-2xl overflow-hidden">

@@ -39,9 +39,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -52,6 +53,7 @@ body {
   color: #fafafa;
   overflow-x: hidden;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit', sans-serif;

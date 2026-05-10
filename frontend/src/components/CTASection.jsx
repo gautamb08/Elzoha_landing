@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function CTASection({ onOpenWaitlist }) {
   return (
-    <section data-testid="cta-section" className="relative py-24 sm:py-32">
+    <section data-testid="cta-section" className="relative py-16 sm:py-32">
       <div className="absolute inset-0 gradient-radial-top pointer-events-none" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <motion.h2

@@ -42,7 +42,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section id="faq" data-testid="faq-section" className="relative py-24 sm:py-32">
+    <section id="faq" data-testid="faq-section" className="relative py-16 sm:py-32">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <motion.span

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function DashboardSection() {
   return (
-    <section data-testid="dashboard-section" className="relative py-24 sm:py-32">
+    <section data-testid="dashboard-section" className="relative py-16 sm:py-32">
       <div className="gradient-radial-center absolute inset-0 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
