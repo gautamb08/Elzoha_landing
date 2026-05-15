@@ -21,7 +21,7 @@ const features = [
   {
     icon: Mic,
     title: "Voice-Note Workflows",
-    desc: "Send Hindi or Hinglish voice notes — AI handles the rest.",
+    desc: "Send Hindi, Hinglish, Kannada, Marathi, Telugu, Tamil, or English voice notes — AI handles the rest.",
     span: "lg:col-span-1",
   },
   {

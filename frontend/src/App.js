@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "@/App.css";
 
 import Navbar from "@/components/Navbar";
@@ -39,6 +40,7 @@ function App() {
         <FooterSection />
       </main>
       <WaitlistModal open={waitlistOpen} onOpenChange={setWaitlistOpen} />
+      <Analytics />
     </div>
   );
 }

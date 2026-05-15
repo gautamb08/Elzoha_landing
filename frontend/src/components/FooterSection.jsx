@@ -2,7 +2,7 @@ import React from "react";
 import { Mail } from "lucide-react";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Waitlist", "Demo"],
+  Product: ["Features", "Pricing", "Early Access", "Demo"],
   Company: ["About", "Blog", "Careers", "Press"],
   Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };

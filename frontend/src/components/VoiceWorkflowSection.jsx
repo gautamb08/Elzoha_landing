@@ -68,7 +68,7 @@ export default function VoiceWorkflowSection() {
               transition={{ delay: 0.2 }}
               className="text-base text-zinc-400 leading-relaxed mb-6 max-w-md"
             >
-              Send voice notes in Hindi, Hinglish, or English. Elzoha transcribes,
+              Send voice notes in Hindi, Hinglish, Kannada, Marathi, Telugu, Tamil, or English. Elzoha transcribes,
               understands context, and executes your business workflows automatically.
             </motion.p>
 
@@ -79,7 +79,7 @@ export default function VoiceWorkflowSection() {
               transition={{ delay: 0.3 }}
               className="flex flex-wrap gap-3"
             >
-              {["Hindi", "Hinglish", "English"].map((lang) => (
+              {["Hindi", "Hinglish", "Kannada", "Marathi", "Telugu", "Tamil", "English"].map((lang) => (
                 <span
                   key={lang}
                   className="px-4 py-1.5 rounded-full text-xs font-medium text-emerald-400 border border-emerald-500/20 bg-emerald-500/5"

@@ -78,7 +78,7 @@ export default function Navbar({ onOpenWaitlist }) {
               onClick={onOpenWaitlist}
               className="bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full px-5 h-9 text-sm glow-emerald transition-all duration-300"
             >
-              Join Waitlist
+              Early Access
             </Button>
           </div>
 
@@ -124,7 +124,7 @@ export default function Navbar({ onOpenWaitlist }) {
                   }}
                   className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full h-12 text-base glow-emerald"
                 >
-                  Join Waitlist
+                  Early Access
                 </Button>
               </div>
             </div>

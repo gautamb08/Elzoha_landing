@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Can I use voice notes?",
     answer:
-      "Yes! Hindi, Hinglish, and English voice notes are fully supported. Just record a voice note with your business request, and Elzoha will transcribe, understand, and execute it.",
+      "Yes! Hindi, Hinglish, Kannada, Marathi, Telugu, Tamil, and English voice notes are fully supported. Just record a voice note with your business request, and Elzoha will transcribe, understand, and execute it.",
   },
   {
     question: "Will GST be handled automatically?",

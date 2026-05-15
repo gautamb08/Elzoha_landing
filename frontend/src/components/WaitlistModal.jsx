@@ -87,7 +87,7 @@ export default function WaitlistModal({ open, onOpenChange }) {
               <span className="text-lg font-bold text-zinc-50 font-['Outfit']">Elzoha</span>
             </div>
             <DialogTitle className="text-2xl font-bold text-zinc-50 font-['Outfit'] tracking-tight">
-              {status === "success" ? "You're on the list!" : "Join the Early Access Waitlist"}
+              {status === "success" ? "You're on the list!" : "Get Early Access"}
             </DialogTitle>
             <DialogDescription className="text-sm text-zinc-400 mt-2">
               {status === "success"
@@ -103,7 +103,7 @@ export default function WaitlistModal({ open, onOpenChange }) {
               <CheckCircle2 className="w-8 h-8 text-emerald-500" />
             </div>
             <p className="text-sm text-zinc-400 text-center">
-              Thank you, <span className="text-zinc-200 font-medium">{form.name}</span>! We've added you to the waitlist.
+              Thank you, <span className="text-zinc-200 font-medium">{form.name}</span>! We've added you to the early access list.
             </p>
             <Button
               data-testid="waitlist-done-btn"
@@ -202,7 +202,7 @@ export default function WaitlistModal({ open, onOpenChange }) {
               ) : (
                 <>
                   <Sparkles className="w-4 h-4 mr-1" />
-                  Join Early Access Waitlist
+                  Get Early Access
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </>
               )}

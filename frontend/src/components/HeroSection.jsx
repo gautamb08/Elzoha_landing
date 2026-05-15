@@ -159,7 +159,7 @@ export default function HeroSection({ onOpenWaitlist }) {
                 onClick={onOpenWaitlist}
                 className="bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full px-8 h-12 text-base glow-emerald transition-all duration-300 group"
               >
-                Join Waitlist
+                Early Access
                 <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
               </Button>
               <a

@@ -24,7 +24,7 @@ export default function CTASection({ onOpenWaitlist }) {
           transition={{ delay: 0.15 }}
           className="text-base sm:text-lg text-zinc-400 max-w-lg mx-auto mb-8"
         >
-          Join hundreds of vendors already on the waitlist for early access to
+          Join hundreds of vendors already getting early access to
           Elzoha.
         </motion.p>
         <motion.div
@@ -39,7 +39,7 @@ export default function CTASection({ onOpenWaitlist }) {
             onClick={onOpenWaitlist}
             className="bg-emerald-500 hover:bg-emerald-600 text-black font-semibold rounded-full px-8 h-12 text-base glow-emerald transition-all duration-300 group"
           >
-            Join Waitlist
+            Early Access
             <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
           </Button>
           <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
