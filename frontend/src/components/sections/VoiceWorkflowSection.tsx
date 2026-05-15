@@ -11,14 +11,14 @@ export default function VoiceWorkflowSection() {
         <div className="bg-[#075E54] rounded-3xl overflow-hidden shadow-xl relative">
           <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")' }}></div>
           
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 p-6 sm:p-10 lg:p-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 p-5 sm:p-10 lg:p-16">
             
             {/* Left: Content */}
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider uppercase mb-6">
                 <Mic className="w-4 h-4" /> Voice Notes
               </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4 sm:mb-6 leading-tight">
+              <h2 className="text-xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4 sm:mb-6 leading-tight break-words">
                 Working in the market or warehouse? <br className="hidden sm:block" /> Use voice notes.
               </h2>
               <p className="text-base sm:text-lg text-green-50 mb-6 sm:mb-8 max-w-md">
