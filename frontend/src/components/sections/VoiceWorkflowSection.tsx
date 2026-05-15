@@ -6,29 +6,29 @@ import { Mic, Waves } from "lucide-react";
 
 export default function VoiceWorkflowSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#075E54] rounded-3xl overflow-hidden shadow-xl relative">
           <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")' }}></div>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10 p-10 lg:p-16">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 p-6 sm:p-10 lg:p-16">
             
             {/* Left: Content */}
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs font-bold tracking-wider uppercase mb-6">
                 <Mic className="w-4 h-4" /> Voice Notes
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4 sm:mb-6 leading-tight">
                 Working in the market or warehouse? <br className="hidden sm:block" /> Use voice notes.
               </h2>
-              <p className="text-lg text-green-50 mb-8 max-w-md">
+              <p className="text-base sm:text-lg text-green-50 mb-6 sm:mb-8 max-w-md">
                 Elzoha accurately transcribes your voice notes in Hindi, Hinglish, or English. It extracts the client name, items, and quantities to instantly generate an invoice or quotation.
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 sm:gap-3">
                 {["Hindi", "Hinglish", "Kannada", "Marathi", "Telugu", "Tamil", "English"].map((lang) => (
                   <span
                     key={lang}
-                    className="px-4 py-1.5 rounded-full text-xs font-semibold bg-white/20 text-white"
+                    className="px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold bg-white/20 text-white"
                   >
                     {lang}
                   </span>
@@ -42,7 +42,7 @@ export default function VoiceWorkflowSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 shadow-2xl w-full max-w-sm"
+                className="bg-white rounded-2xl p-5 sm:p-6 shadow-2xl w-full max-w-sm mx-auto lg:mx-0"
               >
                 <div className="flex items-center gap-4 mb-4 border-b border-gray-100 pb-4">
                   <div className="w-12 h-12 rounded-full bg-[var(--color-brand)] flex items-center justify-center shrink-0">
