@@ -81,3 +81,4 @@ memory/test_credentials.md
 # Mobile development
 android-sdk/frontend/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node
 frontend/.next/dev/cache/turbopack/ee6e79b1/00000328.sst
+frontend/node_modules/@next/swc-darwin-x64/next-swc.darwin-x64.node

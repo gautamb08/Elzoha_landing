@@ -81,7 +81,7 @@ export default function HeroSection({ onOpenWaitlist }: { onOpenWaitlist?: () =>
             >
               <div className="flex items-center gap-1.5 flex-wrap">
                 <Check className="w-4 h-4 text-green-500 flex-shrink-0" /> 
-                <span>Works in <span className="font-bold text-gray-800">Hindi, Hinglish, Kannada, Marathi, Telugu, Tamil, English</span></span>
+                <span><span className="font-bold text-gray-800">Supports Hindi, Hinglish and regional languages.</span></span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Check className="w-4 h-4 text-green-500" /> GST Ready
